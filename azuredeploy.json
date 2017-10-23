@@ -4,7 +4,7 @@
     "parameters": {
         "location": {
             "type": "string",
-            "value": "westeurope"
+            "default": "westeurope"
         },
         "virtualMachineName": {
             "type": "string"
