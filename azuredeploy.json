@@ -4,55 +4,74 @@
     "parameters": {
         "location": {
             "type": "string",
-            "default": "westeurope"
+            "allowedValues": [
+                "westeurope",
+                "northeurope"],
+            "defaultValue": "westeurope"
         },
         "virtualMachineName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "CloudTraining"
         },
         "virtualMachineSize": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Standard_DS2_v2_Promo"
         },
         "adminUsername": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Student"
         },
         "virtualNetworkName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Training-vnet"
         },
         "networkInterfaceName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "cloudtraining124"
         },
         "networkSecurityGroupName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "CloudTraining-nsg"
         },
         "adminPassword": {
-            "type": "securestring"
+            "type": "securestring",
+            "defaultValue": null
         },
         "diagnosticsStorageAccountName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "trainingdiag244"
         },
         "diagnosticsStorageAccountId": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Microsoft.Storage/storageAccounts/trainingdiag244"
         },
         "diagnosticsStorageAccountType": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Standard_LRS"
         },
         "addressPrefix": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "10.0.2.0/24"
         },
         "subnetName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "default"
         },
         "subnetPrefix": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "10.0.2.0/24"
         },
         "publicIpAddressName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "CloudTraining-ip"
         },
         "publicIpAddressType": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Dynamic"
         },
         "publicIpAddressSku": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Basic"
         }
     },
     "variables": {
