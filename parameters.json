@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "CloudTraining"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS2_v2_Promo"
+        },
+        "adminUsername": {
+            "value": "Student"
+        },
+        "virtualNetworkName": {
+            "value": "Training-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "cloudtraining124"
+        },
+        "networkSecurityGroupName": {
+            "value": "CloudTraining-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "trainingdiag244"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/trainingdiag244"
+        },
+        "addressPrefix": {
+            "value": "10.0.2.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.2.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "CloudTraining-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
