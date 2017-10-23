@@ -9,6 +9,10 @@
                 "northeurope"],
             "defaultValue": "westeurope"
         },
+        "resourceGroupName": {
+            "type": "string",
+            "defaultValue": "Training"
+        },
         "virtualMachineName": {
             "type": "string",
             "defaultValue": "CloudTraining"
